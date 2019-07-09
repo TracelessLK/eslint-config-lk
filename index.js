@@ -3,6 +3,7 @@ module.exports = {
     "WebSocket": true,
   },
   rules: {
+    "no-param-reassign":0, //禁止对 function 的参数进行重新赋值
     "no-debugger": 2, //禁用 debugger
     'arrow-parens':0, //要求箭头函数的参数使用圆括号
     'jsx-quotes':0, //强制在 JSX 属性中一致地使用双引号或单引号
@@ -41,7 +42,7 @@ module.exports = {
     'no-dupe-args': 2, // 禁止在函数参数中出现重复名称的参数
     'no-ternary': 0, // 禁用三元操作符
     'no-use-before-define': 0, // 禁止在变量定义之前使用它们
-    "no-eq-null": 2, // 禁止对null使用==或!=运算符
+    "no-eq-null": 0, // 禁止对null使用==或!=运算符
     "use-isnan": 2, // 禁止比较时使用NaN，只能用isNaN()
     "max-len": 0, // 强制一行的最大长度
     "no-loop-func": 0, // 禁止在循环中出现 function 声明和表达式
