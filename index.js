@@ -3,6 +3,12 @@ module.exports = {
     "WebSocket": true,
   },
   rules: {
+    "no-debugger": 2, //禁用 debugger
+    'arrow-parens':0, //要求箭头函数的参数使用圆括号
+    'jsx-quotes':0, //强制在 JSX 属性中一致地使用双引号或单引号
+    'object-curly-newline':0, //强制大括号内换行符的一致性
+    "no-useless-rename": 2, //禁止在 import 和 export 和解构赋值时将引用重命名为相同的名字
+    "no-label-var": 2, //不允许标签与变量同名
     'no-restricted-syntax':0, //禁止使用特定的语法
     'camelcase':0, //强制使用骆驼拼写法命名约定
     'new-cap':0, //要求构造函数首字母大写
@@ -55,5 +61,6 @@ module.exports = {
     'import/order':0, //在模块导入顺序中强制执行约定
     'standard/no-callback-literal':0, //无回调文本
     'import/no-dynamic-require':0, //禁止require()使用表达式调用
+    'import/newline-after-import':2, //强制在最后一个顶级导入语句或需要调用之后有一个或多个空行
   },
 }
