@@ -37,7 +37,7 @@ module.exports = {
     'key-spacing':0, //强制在对象字面量的属性中键和值之间使用一致的间距
     'spaced-comment':0, //强制在注释中 // 或 /* 使用一致的空格
     'no-alert': 2, // 禁用 alert、confirm 和 prompt
-    'no-console': 2, // 禁用 console
+    'no-console': [2, { "allow": ["warn", "error", "info"] }], // 禁用 console
     'no-var': 2, // 要求使用 let 或 const 而不是 var
     "semi": [2, "never"], // 要求或禁止使用分号代替 ASI
     'no-unused-vars': ["error", { "args": "after-used" }], // 禁止出现未使用过的变量,
