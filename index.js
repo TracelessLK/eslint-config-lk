@@ -3,6 +3,11 @@ module.exports = {
     "WebSocket": true,
   },
   rules: {
+    'no-multi-assign':2, //禁止连续赋值
+    'no-bitwise':0, //禁用按位运算符
+    'func-names':0, //要求或禁止使用命名的 function 表达式
+    'class-methods-use-this':0, //强制类方法使用 this
+    'no-throw-literal':0, //禁止抛出异常字面量
     "no-param-reassign":0, //禁止对 function 的参数进行重新赋值
     "no-debugger": 2, //禁用 debugger
     'arrow-parens':0, //要求箭头函数的参数使用圆括号
@@ -28,7 +33,7 @@ module.exports = {
     'no-unused-vars': ["error", { "args": "after-used" }], // 禁止出现未使用过的变量,
     "eqeqeq": 2, // 要求使用 === 和 !==
     'comma-spacing': 2, // 强制在逗号前后使用一致的空格
-    'consistent-return': 2, // 要求 return 语句要么总是指定返回的值，要么不指定
+    'consistent-return': 0, // 要求 return 语句要么总是指定返回的值，要么不指定
     "no-undef-init": 2, // 禁止将变量初始化为 undefined
     "no-new-func": 2, // 禁止对 Function 对象使用 new 操作符
     "global-require": 0, // 要求 require() 出现在顶层模块作用域中
