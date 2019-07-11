@@ -3,6 +3,16 @@ module.exports = {
     "WebSocket": true,
   },
   rules: {
+    'prefer-promise-reject-errors':0, //要求使用 Error 对象作为 Promise 拒绝的原因
+    'no-mixed-operators':0, //禁止混合使用不同的操作符
+    'no-nested-ternary':0, //禁用嵌套的三元表达式
+    'no-await-in-loop':0, //禁止在循环中出现 await
+    'no-restricted-globals':0, //禁用特定的全局变量
+    'prefer-destructuring':0, //优先使用数组和对象解构
+    'no-tabs':0, //禁用 tab
+    'no-new':0, //禁止使用 new 以避免产生副作用
+    'no-useless-constructor':0, //禁用不必要的构造函数
+    'promise/param-names':0,
     'no-multi-assign':2, //禁止连续赋值
     'no-bitwise':0, //禁用按位运算符
     'func-names':0, //要求或禁止使用命名的 function 表达式
