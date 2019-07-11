@@ -13,7 +13,7 @@ module.exports = {
     'no-new':0, //禁止使用 new 以避免产生副作用
     'no-useless-constructor':0, //禁用不必要的构造函数
     'promise/param-names':0,
-    'no-multi-assign':2, //禁止连续赋值
+    'no-multi-assign':0, //禁止连续赋值
     'no-bitwise':0, //禁用按位运算符
     'func-names':0, //要求或禁止使用命名的 function 表达式
     'class-methods-use-this':0, //强制类方法使用 this
